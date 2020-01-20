@@ -1,15 +1,15 @@
-const { Schema, model } = require("mongoose");
+const { Schema } = require("mongoose");
 
 const PointSchema = new Schema({
   type: {
     type: String,
     enum: ["Point"],
-    required: true
+    required: true,
   },
   coordinates: {
     type: [Number],
-    required: true
-  }
+    required: true,
+  },
 });
 
 module.exports = PointSchema;

@@ -1,5 +1,5 @@
 const { Schema, model } = require("mongoose");
-7;
+
 const PointSchema = require("./utils/PointSchema");
 
 const DevSchema = new Schema({
@@ -10,8 +10,8 @@ const DevSchema = new Schema({
   techs: [String],
   location: {
     type: PointSchema,
-    index: "2dsphere"
-  }
+    index: "2dsphere",
+  },
 });
 
 module.exports = model("Dev", DevSchema);

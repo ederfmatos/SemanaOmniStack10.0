@@ -1,1 +1,2 @@
-module.exports = string => string.split(",").map(item => item.trim());
+module.exports = (string = "") =>
+  string.split(",").map(item => item.trim()) || [];
